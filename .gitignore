@@ -54,3 +54,9 @@ memory/
 test_credentials.md
 design_guidelines.json
 frontend/node_modules/.cache/default-development/3.pack
+.env.*
+*.env
+credentials.json
+*.pem
+*.key
+.credentials
