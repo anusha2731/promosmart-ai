@@ -1,0 +1,114 @@
+{
+  "project_name": "PromoSmart AI",
+  "domain": "Retail SaaS & POS Dashboard",
+  "theme": "light",
+  "archetype": "Archetype 4 (Swiss & High-Contrast)",
+  "emotional_tone": "Authoritative, clear, function-first, and highly efficient.",
+  "design_principles": [
+    "Prioritize scanning over reading: users glance first, so place the most important information in the top-left.",
+    "Design for decisions, not data volume: Show only metrics users need to act on (e.g., active promos, stockouts).",
+    "Color is Function Only: 95% of the UI should be monochrome. Color exists only to guide action.",
+    "Control Room Grid: Use dense, functional bento grids without wasting vertical space, ensuring every pixel is utilized."
+  ],
+  "colors": {
+    "background": "#F4F4F5",
+    "surface": "#FFFFFF",
+    "primary": "#002FA7",
+    "primary_hover": "#002585",
+    "secondary": "#E4E4E7",
+    "secondary_hover": "#D4D4D8",
+    "accent_alert": "#FF2A00",
+    "text_main": "#0A0A0A",
+    "text_muted": "#52525B",
+    "border": "#E4E4E7",
+    "success": "#16A34A",
+    "warning": "#EAB308"
+  },
+  "typography": {
+    "font_heading": "Outfit",
+    "font_body": "IBM Plex Sans",
+    "hierarchy_rules": {
+      "h1": "text-4xl sm:text-5xl tracking-tight leading-none font-medium",
+      "h2": "text-2xl sm:text-3xl tracking-tight leading-none font-medium",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "body_small": "text-sm text-zinc-500",
+      "label": "text-xs tracking-[0.2em] uppercase font-bold text-zinc-500"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy inside elements, with sharp Control Room grids for layout.",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "container_padding": "p-6 sm:p-8",
+    "border_radius": "rounded-lg",
+    "alignment": "Left-align dense content and metrics. Optical alignment for icons."
+  },
+  "surfaces_and_micro_themes": {
+    "dashboard_cards": "Flat background, 1px subtle border (border-zinc-200), no shadow. Hover: slight lift (-translate-y-1) and shadow-sm.",
+    "header": "Solid White background with a hard bottom border (border-zinc-200).",
+    "buttons": "Sharp corners or max 8px radius. High contrast."
+  },
+  "components_strategy": {
+    "general": "Use Shadcn components heavily customized to be flat, with 1px borders and neutral backgrounds.",
+    "tables": "Dense, crisp lines. No alternating row colors, just clean bottom borders.",
+    "charts": "Recharts. Monochrome with single accent color (#002FA7) to highlight key data points.",
+    "ai_explanations": "Use 'Grid Borders' micro-theme: Expose the skeleton, use border-collapse style layouts for AI reasoning steps.",
+    "forms": "Use Shadcn Inputs, strict left alignment, clear required states."
+  },
+  "motion_and_interaction": {
+    "hover_states": "Always explicitly set text color on hover. Use transition: transform 0.2s ease, background-color 0.2s ease.",
+    "focus_states": "High contrast focus rings: focus:ring-2 focus:ring-blue-600 focus:ring-offset-2.",
+    "ai_loading": "Use minimal monospaced loaders or subtle pulse animations instead of generic spinners for AI recommendations."
+  },
+  "icons_and_assets": {
+    "library": "lucide-react",
+    "style": "Clean, line-based, consistent stroke width."
+  },
+  "testing_attributes": {
+    "rule": "All interactive and key informational elements MUST include a 'data-testid' attribute.",
+    "convention": "kebab-case, role-based (e.g., data-testid='apply-promo-button')"
+  },
+  "image_urls": {
+    "brand_logo": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/4b4426ad-0a51-424f-b61e-d333d18a9829/images/c267655e5a20db84937ee3b894efe117f0c8f8b8ee20a993f11113ad2ade5c7b.png",
+      "description": "Minimalist app logo for PromoSmart AI, abstract geometric S shape interlocking with a price tag.",
+      "category": "logo"
+    },
+    "login_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/4b4426ad-0a51-424f-b61e-d333d18a9829/images/de455a4d213e1cdc42ce4bcaed580b7a79d0c4aa9343203e7d42349ef42501ff.png",
+      "description": "A bright, clean modern retail store interior, out of focus, bokeh effect, warm lighting.",
+      "category": "background"
+    },
+    "product_sneaker_1": {
+      "url": "https://images.unsplash.com/photo-1768647417374-5a31c61dc5d0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwc25lYWtlciUyMHByb2R1Y3R8ZW58MHx8fHwxNzc5MzcyNTk4fDA&ixlib=rb-4.1.0&q=85",
+      "description": "A black and white running shoe with a thick sole.",
+      "category": "product"
+    },
+    "product_sneaker_2": {
+      "url": "https://images.pexels.com/photos/20755674/pexels-photo-20755674.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Stylish navy blue leather sneaker suspended against a neutral wall.",
+      "category": "product"
+    },
+    "product_watch_1": {
+      "url": "https://images.unsplash.com/photo-1758348844348-acaf8d854665?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2Mzl8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBzbWFydHdhdGNoJTIwcHJvZHVjdHxlbnwwfHx8fDE3NzkzNzI1OTl8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Two smartwatches displayed with different bands.",
+      "category": "product"
+    },
+    "product_watch_2": {
+      "url": "https://images.pexels.com/photos/9142237/pexels-photo-9142237.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Sleek smartwatch with monochrome digital design on a white background.",
+      "category": "product"
+    }
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the typography pairings: Outfit for headings, IBM Plex Sans for body text.",
+    "Do NOT use 'Inter' for headings under any circumstances.",
+    "For the UI, avoid dark-mode tech looks. Use the bright, stark white and zinc-100 backgrounds with sharp 1px borders.",
+    "The primary CTA color is International Klein Blue (#002FA7). Use it sparingly for primary actions only. Limit other colors.",
+    "All cards and containers must use p-6 or p-8 padding and max 8px border-radius.",
+    "Implement the 'Control Room' grid for the Analytics Dashboard: dense, aligned to the top, utilizing all horizontal space.",
+    "Add 'data-testid' to all buttons, links, and forms.",
+    "Use Shadcn UI for all complex interactive elements, customizing their Tailwind classes to match the 1px flat border aesthetic."
+  ]
+}
