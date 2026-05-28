@@ -43,15 +43,15 @@ const LoginPage = () => {
 
   return (
     <div className="login-page">
-      <div className="w-full max-w-md">
-        <div className="card" style={{ border: '1px solid #E4E4E7', borderRadius: '8px', padding: '3rem' }}>
+      <div className="w-full max-w-md px-6">
+        <div className="bg-white shadow-2xl rounded-3xl p-10" style={{ border: '1px solid #E4E4E7', borderRadius: '8px', padding: '3rem' }}>
           <div className="text-center mb-8">
             <img
               src="https://static.prod-images.emergentagent.com/jobs/4b4426ad-0a51-424f-b61e-d333d18a9829/images/c267655e5a20db84937ee3b894efe117f0c8f8b8ee20a993f11113ad2ade5c7b.png"
               alt="PromoSmart AI"
-              className="h-16 mx-auto mb-4"
+              className="h-20 w-auto mx-auto mb-6"
             />
-            <h1 className="text-3xl font-medium tracking-tight" style={{ fontFamily: 'Outfit, sans-serif', color: '#0A0A0A' }}>
+            <h1 className="text-6xl text-red-500 font-bold" style={{ fontFamily: 'Outfit, sans-serif', color: '#0A0A0A' }}>
               PromoSmart AI
             </h1>
             <p className="text-sm mt-2" style={{ color: '#52525B' }}>

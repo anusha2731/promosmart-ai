@@ -8,7 +8,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(0, 47, 167, 0.05) 0%, rgba(244, 244, 245, 1) 100%);
+  background: linear-gradient(
+    135deg,
+    #eff6ff 0%,
+    #ffffff 50%,
+    #f8fafc 100%
+  );
 }
 
 .dashboard-layout {
@@ -48,9 +53,11 @@
 .card {
   background: #FFFFFF;
   border: 1px solid #E4E4E7;
-  border-radius: 8px;
-  padding: 1.5rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,.08),
+    0 4px 10px rgba(0,0,0,.04);
 }
 
 .card:hover {
@@ -59,18 +66,19 @@
 }
 
 .btn-primary {
-  background: #002FA7;
+  background: #2563EB;
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 500;
+  padding: 0.875rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  width: 100%;
+  transition: all .2s ease;
 }
 
 .btn-primary:hover {
-  background: #002585;
+  background: #1D4ED8;
   transform: translateY(-1px);
 }
 
